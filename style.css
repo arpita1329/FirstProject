@@ -48,6 +48,7 @@ body {
     width:100%;
     position: absolute;
     top: 30px;
+    left: 0;
     border-radius: 5px;
 }
 }
@@ -60,6 +61,36 @@ body {
     margin: 20px 0;
     font-weight:bolder;
 }
+
+.explore_menu_container {
+    margin-top: 50px;
+    position: relative;
+}
+.explore_menu_text {
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0;
+    text-align: center;
+}
+.food_menu_card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+   
+}
+.food_image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.food_menu_card_description {
+    padding: 20px;
+}
+.explore_menu_view_more {
+    display:flex;
+    justify-content: center;
+}
+
 @media (min-width:768px) {
     .navbar {
         justify-content: space-between;
@@ -79,6 +110,41 @@ body {
         justify-content: space-between;
         gap: 10px;
     }
+    .explore_menu_container{
+        position: relative;
+    }
+    .explore_menu_bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 1300%;
+        width: 100%;
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0% ,
+            #dd2476 51% ,
+            #ff512f 100% 
+        );
+        z-index: -3;
+        transform: skewY(-5deg);
+    }
+    .explore_menu_lists {
+        display: flex;
+        gap: 8px;
+        margin-top: 50px;
+    }
+    #pizza_card {
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+    .food_menu_card{
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .explore_menu_text {
+        margin: 50px 0;
+    }
 }
 @media (min-width:1020px) {
     
@@ -88,13 +154,20 @@ body {
     .hero_text {
         font-size: 45px;
     }
+    .explore_menu_lists {
+        gap: 20px;
+        padding: 0 10px;
+    }
+    .explore_menu_text {
+        font-size: 50px;
+    }
+    .explore_menu_bg {
+        height: 650px;
+    }
 }
 @media (min-width:1400px) {
     .container{
         max-width: 1250px;
     }
-    .hero_image {
-        position: absolute ;
-        margin-top: auto;
-    }
+   
 }
